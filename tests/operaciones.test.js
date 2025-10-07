@@ -1,17 +1,17 @@
 const { suma, restar, multiplicar, dividir } = require('../src/operaciones');
 
-test('Suma de 2 + 3 = 5', () => {
-  expect(suma(2, 3)).toBe(5);
+test('Suma de 4 + 4 = 8', () => {
+  expect(suma(4, 4)).toBe(8);
 });
 
-test('Resta de 10 - 4 = 6', () => {
-  expect(restar(10, 4)).toBe(6);
+test('Resta de 15 - 2 = 13', () => {
+  expect(restar(15, 2)).toBe(13);
 });
 
-test('Multiplicar 4 * 5 = 20', () => {
-  expect(multiplicar(4, 5)).toBe(20);
+test('Multiplicar 10 * 5 = 50', () => {
+  expect(multiplicar(10, 5)).toBe(50);
 });
 
-test('Dividir de 4 / 2 = 2', () => {
-  expect(dividir(4, 2)).toBe(2);
+test('Dividir de 8 / 2 = 4', () => {
+  expect(dividir(8, 2)).toBe(4);
 });

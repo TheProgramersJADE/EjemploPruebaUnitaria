@@ -7,14 +7,14 @@ test('GET / debe responder con API funcionando', async () => {
   expect(res.text).toBe('API funcionando');
 });
 
-test('GET /suma/2/3 debe devolver 5', async () => {
-  const res = await request(app).get('/suma/2/3');
+test('GET /suma/4/4 debe devolver 8', async () => {
+  const res = await request(app).get('/suma/4/4');
   expect(res.statusCode).toBe(200);
-  expect(res.body.resultado).toBe(5);
+  expect(res.body.resultado).toBe(8);
 });
 
-test('GET /restar/10/4 debe devolver 6', async () => {
-  const res = await request(app).get('/restar/10/4');
+test('GET /restar/15/2 debe devolver 13', async () => {
+  const res = await request(app).get('/restar/15/2');
   expect(res.statusCode).toBe(200);
-  expect(res.body.resultado).toBe(6);
+  expect(res.body.resultado).toBe(13);
 });
