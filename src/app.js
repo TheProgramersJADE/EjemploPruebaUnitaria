@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('API funcionando');
+  res.send('Proyecto funcionando');
 });
 
 app.get('/suma/:a/:b', (req, res) => {

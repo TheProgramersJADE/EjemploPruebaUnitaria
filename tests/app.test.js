@@ -4,7 +4,7 @@ const app = require('../src/app');
 test('GET / debe responder con API funcionando', async () => {
   const res = await request(app).get('/');
   expect(res.statusCode).toBe(200);
-  expect(res.text).toBe('API funcionando');
+  expect(res.text).toBe('Proyecto funcionando');
 });
 
 test('GET /suma/4/4 debe devolver 8', async () => {
